@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaiTap_2c"
+    android:background="#C4C4C4">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Nguyên hàm tích phân và ứng dụng"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBook"
+            app:layout_constraintTop_toTopOf="@+id/imgBook"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Cung cấp bởi Tiki Trading"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="@+id/tv1"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"></TextView>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="141.800 đ"
+            android:textColor="#EE0D0D"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/tv2"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"></TextView>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:foreground="@drawable/line_text"
+            android:text="141.000 đ"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/tv3"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"></TextView>
+
+        <TextView
+            android:id="@+id/tvGiamGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Mã giảm giá đã lưu"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="@+id/imgBook"
+            app:layout_constraintTop_toBottomOf="@+id/imgBook"></TextView>
+
+        <TextView
+            android:id="@+id/tvXem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Xem tại đây"
+            android:textColor="#134FEC"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="@+id/tv3"
+            app:layout_constraintTop_toTopOf="@+id/tvGiamGia"></TextView>
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvGiamGia"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvGiamGia"
+            android:background="@drawable/vien_edittext_2c"
+            android:drawableLeft="@drawable/yellow"
+            android:paddingLeft="25dp"
+            android:hint="Mã giảm giá"
+            android:textSize="18dp"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"></EditText>
+        <Button
+            android:id="@+id/btnApDung"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="#0A5EB7"
+            android:text="Áp dụng"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintTop_toTopOf="@+id/edt1"
+            app:layout_constraintStart_toEndOf="@+id/edt1"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="15dp"
+            android:textSize="20dp"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/tvKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Bạn có phiếu quà tặng Tiki/Got it/ Urbox?"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/tvNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+
+            android:fontFamily="@font/roboto_bold"
+            android:text="Nhập tại đây?"
+            android:textColor="#134FEC"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/tvKM"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintTop_toTopOf="@+id/tvKM"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/layout2"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/tvTamTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Tạm tính"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/tvTienTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+
+            android:fontFamily="@font/roboto_bold"
+            android:text="141.800 đ"
+            android:textColor="#EE0D0D"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/tvTamTinh"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="140dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout3">
+
+        <TextView
+            android:id="@+id/tvThanhTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Thành tiền"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/tvTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+
+            android:fontFamily="@font/roboto_bold"
+            android:text="141.800 đ"
+            android:textColor="#EE0D0D"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/tvThanhTien"></TextView>
+
+        <Button
+            android:id="@+id/btnDat"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#E53935"
+            android:text="TIẾN HÀNH ĐẶT HÀNG"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvTien"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvThanhTien"
+            app:layout_constraintTop_toBottomOf="@+id/tvThanhTien"
+            app:layout_constraintVertical_bias="1.0"></Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
